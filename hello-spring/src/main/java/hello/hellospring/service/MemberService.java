@@ -12,8 +12,9 @@ import java.util.Optional;
 
 @Transactional
 public class MemberService {
-    private MemberRepository memberRepository = new
-            MemoryMemberRepository();
+//    private MemberRepository memberRepository = new
+//            MemoryMemberRepository();
+    private final MemberRepository memberRepository;
 
     @Autowired
     public MemberService(MemberRepository memberRepository){

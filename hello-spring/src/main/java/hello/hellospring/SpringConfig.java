@@ -15,11 +15,7 @@ public class SpringConfig {
 
     @Bean
     public MemberService memberService() {
-        return new MemberService(memberRepository());
-    }
-
-    private MemberRepository memberRepository() {
-        return null;
+        return new MemberService(memberRepository);
     }
 }
 
